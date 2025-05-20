@@ -80,3 +80,6 @@ If you find this work helpful, we would appreciate it if you could cite it!
   journal={arXiv preprint arXiv:2410.03663},
   year={2024}
 }
+```
+
+[![Star History Chart](https://api.star-history.com/svg?repos=zhuochunli/Learn-from-Committee&type=Date)](https://star-history.com/#zhuochunli/Learn-from-Committee&Date)
