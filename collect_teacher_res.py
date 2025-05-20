@@ -15,7 +15,7 @@ parser = argparse.ArgumentParser(description='Get correct rationales form teache
 parser.add_argument('--gpt_api', help='the openAI api')
 parser.add_argument('--mistral_api', help='the mistral api')
 parser.add_argument('--gemini_api', help='the gemini api')
-parser.add_argument('--student_wrong', default='Llama-2-7b-chat-hf_gsm8k_false_round0.json',
+parser.add_argument('--student_wrong', default='data/Llama-2-7b-chat-hf_gsm8k_false_round0.json',
                     help='json file of student wrong predictions')
 args = parser.parse_args()
 
@@ -272,10 +272,10 @@ if __name__ == '__main__':
         false_data = json.load(f)
     student_model = args.student_wrong.split('_')[0]
 
-    with open(f'{student_model}_{teachers.dataset}_feedback_round0.json', 'w') as f:
+    with open(f'data/{student_model}_{teachers.dataset}_feedback_round0.json', 'w') as f:
         json.dump(teachers.collect_feedbacks(false_data), f, indent=4)
         print(f'saved {student_model}_{teachers.dataset}_feedback_round0.json !')
 
-    with open(f'{student_model}_{teachers.dataset}_rationale_round0.json', 'w') as f:
+    with open(f'data/{student_model}_{teachers.dataset}_rationale_round0.json', 'w') as f:
         json.dump(teachers.collect_correct_rationale(false_data), f, indent=4)
         print(f'saved {student_model}_{teachers.dataset}_rationale_round0.json !')
