@@ -31,7 +31,7 @@ python infer_student_wrong.py -model meta-llama/Llama-2-7b-chat-hf --dataset sva
 ```   
 
 After running, the student model will be downloaded under `/local_models` and datasets will be downloaded under `/local_dataset`. The student's wrong answers will be stored under `/data`, like `Llama-2-7b-chat-hf_svamp_false_round0.json`.
-### 3. Collecting Teacher LLMs with Students’ Mistakes
+### 3. Collecting Teacher LLMs with Student's Mistakes
 You can set your API key for GPT-3.5-Turbo, Gemini-1.0-Pro, and Mixtral-8x7B-Instructv0.1. For example:  
 ```
 export OPENAI_API_KEY='Your key'  
