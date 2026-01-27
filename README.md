@@ -82,4 +82,5 @@ If you find this work helpful, we would appreciate it if you could cite it!
 }
 ```
 
-[![Star History Chart](https://api.star-history.com/svg?repos=zhuochunli/Learn-from-Committee&type=Date)](https://star-history.com/#zhuochunli/Learn-from-Committee&Date)
+<!-- [![Star History Chart](https://api.star-history.com/svg?repos=zhuochunli/Learn-from-Committee&type=Date)](https://star-history.com/#zhuochunli/Learn-from-Committee&Date) -->
+
